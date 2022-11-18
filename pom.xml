@@ -43,6 +43,17 @@
             <artifactId>hsqldb</artifactId>
             <version>2.6.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.9.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -81,11 +92,11 @@
                         </configuration>
                     </execution>
                 </executions>
-                <configuration>
+                <!--<configuration>
                     <systemPropertyVariables>
                         <jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
                     </systemPropertyVariables>
-                </configuration>
+                </configuration>-->
             </plugin>
 
             <plugin>
